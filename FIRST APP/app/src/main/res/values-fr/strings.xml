@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mon Application</string>
+    <string name="my_profile">Mon profil</string>
+    <string name="status">Statut : Contente de faire de l\'android</string>
+    <string name="edit_profile">Modifier profil</string>
+    <string name="city_of_birth">Ville de naissance : Lille</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.topquizzocapp.Controller.GameActivity">
+
+    <TextView
+        android:id="@+id/activity_game_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Question ?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/activity_game_answer1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:text="Answer 1"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/activity_game_answer2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:text="Answer 2"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/activity_game_answer3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:text="Answer 3"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/activity_game_answer4_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:text="Answer 4"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+</LinearLayout>

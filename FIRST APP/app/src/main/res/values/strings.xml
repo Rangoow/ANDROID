@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="my_profile">My profile</string>
+    <string name="information" translatable="false">Léa Alami</string>
+    <string name="age" translatable="false">Age : 22</string>
+    <string name="city_of_birth">City of birth : Lille</string>
+    <string name="status">Status : Happy to do android</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="todo" translatable="false">TODO</string>
+</resources>
