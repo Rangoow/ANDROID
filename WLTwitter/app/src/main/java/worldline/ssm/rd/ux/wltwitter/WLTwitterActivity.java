@@ -1,9 +1,8 @@
 package worldline.ssm.rd.ux.wltwitter;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import worldline.ssm.rd.ux.wltwitter.Interfacelibre.TweetListener;
 import worldline.ssm.rd.ux.wltwitter.async.RetrieveTweetsAsyncTask;
+import worldline.ssm.rd.ux.wltwitter.interfaces.TweetListener;
 import worldline.ssm.rd.ux.wltwitter.pojo.Tweet;
 import worldline.ssm.rd.ux.wltwitter.ui.fragments.TweetsFragment;
 import worldline.ssm.rd.ux.wltwitter.utils.Constants;
@@ -16,14 +15,16 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class WLTwitterActivity extends AppCompatActivity implements TweetListener {
-    private RetrieveTweetsAsyncTask mTweetsAsyncTask;
 
+    @Override
+    public void onRetweet(Tweet tweet) {
 
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }*/
+    }
+
+    @Override
+    public void onViewTweet(Tweet tweet) {
+        Toast.makeText(this,tweet.text,Toast.LENGTH_LONG).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +39,12 @@ public class WLTwitterActivity extends AppCompatActivity implements TweetListene
                 final String  login = extras.getString(Constants.Login.EXTRA_LOGIN);
                 getSupportActionBar().setSubtitle(login);
 
-            }
-        }
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.container,new TweetsFragment()).commit();
 
+            }
+
+        }
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container,new TweetsFragment()).commit();
     }
 
     @Override
@@ -69,14 +71,5 @@ public class WLTwitterActivity extends AppCompatActivity implements TweetListene
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onRetweet(Tweet tweet) {
 
-    }
-
-    @Override
-    public void onView(Tweet tweet) {
-        Toast.makeText(this,tweet.text,Toast.LENGTH_LONG).show();
-
-    }
 }
